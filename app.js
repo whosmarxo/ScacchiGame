@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/webapp/public')));
 
 const server = app.listen(PORT, () => {
   console.log(`Server in ascolto su http://localhost:${PORT}`);
